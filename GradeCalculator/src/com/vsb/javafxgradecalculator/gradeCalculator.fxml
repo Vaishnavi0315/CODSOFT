@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #D0FFFF;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vsb.javafxgradecalculator.Controller">
+   <Region prefHeight="18.0" prefWidth="273.0" />
+    <Label text="Enter Marks for Each Subject (Out of 100)">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Subject 1:" />
+        <TextField fx:id="subject1TextField" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Subject 2:" />
+        <TextField fx:id="subject2TextField" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Subject 3:" />
+        <TextField fx:id="subject3TextField" />
+    </HBox>
+
+    <Button alignment="CENTER" onMouseClicked="#calculateGrade" style="-fx-label-padding: 1; -fx-background-color: #D78E95;" text="Calculate" />
+
+
+    <Label fx:id="totalMarksLabel" />
+    <Label fx:id="averagePercentageLabel" />
+    <Label fx:id="gradeLabel" />
+</VBox>
